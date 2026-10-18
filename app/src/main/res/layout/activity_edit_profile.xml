@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="?android:attr/colorBackground"
+    android:textColor="?android:attr/textColorPrimary"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Your Profile "
+        android:textSize="20sp"
+         
+        android:textStyle="bold"
+        android:fontFamily="@font/adamina"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/etEditProfileName"
+        android:hint="Name"
+        android:textColorHint="#4D4A4A"
+         
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:fontFamily="@font/adamina"
+        android:inputType="text"
+        android:layout_margin="12sp"
+        android:paddingStart="10sp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#AEDFEBF0"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/etEditProfileMobileNo"
+        android:hint="Mobile No."
+        android:textColorHint="#4D4A4A"
+         
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:fontFamily="@font/adamina"
+        android:inputType="number"
+        android:layout_margin="12sp"
+        android:paddingStart="10sp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#AEDFEBF0"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/etEditProfileEmailID"
+        android:hint="Email ID"
+        android:textColorHint="#4D4A4A"
+         
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:fontFamily="@font/adamina"
+        android:inputType="textEmailAddress"
+        android:layout_margin="12sp"
+        android:paddingStart="10sp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#AEDFEBF0"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/etEditProfileUsername"
+        android:hint="Username"
+        android:textColorHint="#4D4A4A"
+         
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:fontFamily="@font/adamina"
+        android:inputType="textEmailAddress"
+        android:layout_margin="12sp"
+        android:paddingStart="10sp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#AEDFEBF0"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/etEditProfilePassword"
+        android:hint="Password"
+        android:textColorHint="#4D4A4A"
+         
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:fontFamily="@font/adamina"
+        android:inputType="text"
+        android:layout_margin="12sp"
+        android:paddingStart="10sp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#AEDFEBF0"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/etEditProfileConfirmPassword"
+        android:hint="Confirm Password"
+        android:textColorHint="#4D4A4A"
+         
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:fontFamily="@font/adamina"
+        android:inputType="text"
+        android:layout_margin="12sp"
+        android:paddingStart="10sp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#AEDFEBF0"
+        />
+
+    <Button
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEditProfileUpdate"
+        android:text="Update Profile"
+         
+        android:textSize="20sp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

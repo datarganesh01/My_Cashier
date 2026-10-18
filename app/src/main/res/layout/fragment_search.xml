@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SearchFragment"
+    android:orientation="vertical"
+
+    android:background="?android:attr/colorBackground"
+    android:textColor="?android:attr/textColorPrimary"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:id="@+id/etSearchFragmentSpeechtoText"
+            android:hint="Search here"
+            android:textColorHint="#373636"
+            android:textStyle="normal"
+            android:fontFamily="@font/adamina"
+            android:background="@drawable/edittext_background"
+           android:paddingStart="10dp"
+            android:inputType="text"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:id="@+id/ivSearchFragmentMic"
+            android:src="@drawable/mic"
+            app:tint="#332F2F"
+            />
+
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/search2"
+        app:tint="#4D4C4C"
+        android:layout_marginTop="160dp"
+        />
+
+</LinearLayout>

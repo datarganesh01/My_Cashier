@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "235589068065",
+    "project_id": "mycashierproject",
+    "storage_bucket": "mycashierproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235589068065:android:c6a48665eae92bfd710a60",
+        "android_client_info": {
+          "package_name": "com.example.mycashier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235589068065-e3dd4dbo9acvq9t7vnkgf2vengdi5n2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mycashier",
+            "certificate_hash": "0a2b169cc4426d33f139d715a1bf85ff44ea9cd4"
+          }
+        },
+        {
+          "client_id": "235589068065-04pe25usek32rcdkg2cle41dtm53utsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3vACda4f09djn4GcoESMUjYv2mVbiaWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235589068065-04pe25usek32rcdkg2cle41dtm53utsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

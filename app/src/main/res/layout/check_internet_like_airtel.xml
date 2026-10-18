@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F44336"
+    android:textColor="?android:attr/textColorPrimary"
+    android:id="@+id/internetBanner"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:elevation="8dp"
+    android:translationY="100dp">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/no_internet"
+        app:tint="@android:color/background_dark"
+        android:contentDescription="No internet icon"
+        android:layout_marginLeft="100dp"
+       />
+
+    <TextView
+        android:id="@+id/bannerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No internet connection"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginLeft="130dp"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

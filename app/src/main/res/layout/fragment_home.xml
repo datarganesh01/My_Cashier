@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment"
+    android:orientation="vertical"
+
+
+
+    android:background="?android:attr/colorBackground"
+    android:textColor="?android:attr/textColorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_margin="14dp"
+        >
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_weight="0.9"
+            android:id="@+id/svHomeFragmentSearch"
+            android:queryHint="Search here"
+            android:iconifiedByDefault="false"
+            android:outlineSpotShadowColor="@color/black"
+            android:background="@drawable/edittext_background"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:id="@+id/ivHomeFragmentMic"
+            android:src="@drawable/mic"
+            app:tint="#332F2F"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/isimageslider"
+        app:iss_auto_cycle="true"
+        app:iss_period="1500"
+        app:iss_delay="1500"
+        app:iss_text_align="CENTER"
+
+        app:iss_no_dots="false"
+        app:iss_selected_dot="@drawable/default_selected_dot"
+        app:iss_unselected_dot="@drawable/default_unselected_dot"
+
+        />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/glHomeFragmentGrid"
+        android:columnCount="3"
+        android:padding="8sp"
+
+        />
+
+</ScrollView>
+
+</LinearLayout>

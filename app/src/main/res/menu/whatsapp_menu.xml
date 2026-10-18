@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/whatsappqr"
+            android:title="Scan UPI qr code"
+            app:showAsAction="always"
+            android:icon="@drawable/qrcode"
+            />
+
+    <item
+        android:id="@+id/whatsappcamera"
+        android:title="Camera"
+        app:showAsAction="always"
+        android:icon="@drawable/camera"
+        />
+    <item
+        android:id="@+id/whatsappnewgroup"
+        android:title="New Group"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/whatsappnewcommunity"
+        android:title="New Community"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/whatsappnewbroadcast"
+        android:title="New Broadcast"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/whatsapplinkeddevice"
+        android:title="Linked Device"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/whatsappstarred"
+        android:title="Starred"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/whatsapppayments"
+        android:title="Payments"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/whatsappreadall"
+        android:title="Read All"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/whatsappsettings"
+        android:title="Settings"
+        app:showAsAction="never"
+        />
+
+
+</menu>

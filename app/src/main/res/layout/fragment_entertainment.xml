@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.EntertainmentFragment"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:textColor="?android:attr/textColorPrimary"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="15sp"
+        >
+
+        <ImageView
+            android:id="@+id/ivbackbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="20dp"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music Player"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/audiowide"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/ivcoverimage"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/baseline_music_note_24"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tvSongName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Song Name"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="15sp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/adamina"
+
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvartistname"
+        android:text="Artist name"
+        android:layout_marginLeft="15sp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/adamina"
+
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_margin="15sp"
+
+        >
+
+        <TextView
+            android:id="@+id/tvstarttime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Start Time"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:paddingLeft="15sp"
+
+
+            />
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/skbar"
+            android:thumbTint="#102BBD"
+            android:progressTint="#0A27C8"
+
+             />
+
+        <TextView
+            android:id="@+id/tvtotaltime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:text="Total Time"
+            android:textStyle="bold"
+            android:textSize="12sp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_margin="20sp"
+        >
+
+        <ImageView
+            android:id="@+id/ivlike"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/unlike_icon"
+            android:contentDescription="Like"
+
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/ivprevious"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/previous2"
+            android:contentDescription="Previous Song"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/ivplaypause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/play2"
+            android:contentDescription="Play Song"
+            />
+
+        <ImageView
+            android:id="@+id/ivnext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next2"
+            android:contentDescription="Next Song"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/ivshuffle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/shuffle2"
+            android:contentDescription="Shuffle Songs"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+
+        >
+        <ImageView
+            android:id="@+id/ivvolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/volume"
+            />
+
+        <SeekBar
+            android:id="@+id/skvolumebar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:thumbTint="#0724C8"
+            android:progressTint="#0724C8"
+            />
+      </LinearLayout>
+
+</LinearLayout>

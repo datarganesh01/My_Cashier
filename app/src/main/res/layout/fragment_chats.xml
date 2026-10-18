@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ChatsFragment"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarwhatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="WhatsApp"
+        app:titleTextColor="#08AD03"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Ask Meta AI or Search"
+        android:textColorHint="#908C8C"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#E9E4E4"
+        android:drawableLeft="@drawable/search2"
+        android:drawablePadding="20dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="All"
+                android:backgroundTint="#EDDFDF"
+                android:textColor="#000000"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unread"
+                android:backgroundTint="#EDDFDF"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorites"
+                android:backgroundTint="#EDDFDF"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Groups"
+                android:backgroundTint="#EDDFDF"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:backgroundTint="#EDDFDF"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="➕"
+                android:backgroundTint="#EDDFDF"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/archieve"
+            android:layout_marginLeft="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Archieved"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginLeft="225dp"
+            android:layout_marginBottom="8dp"
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/myself2"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ganesh Datar(You)"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="what was last message..?"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/unseen"
+                    android:drawablePadding="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:49 PM"
+                android:layout_marginLeft="45dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pin"
+                android:layout_marginLeft="15dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ty_co"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TY CO _2025_26"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Addmission process is delayed"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/unseen"
+                    android:drawablePadding="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:15 PM"
+                android:layout_marginLeft="10dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pin"
+                android:layout_marginLeft="15dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/soham2"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soham Kshirsagar"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soham reacted 🤷‍♂️ to your msg"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/unseen"
+                    android:drawablePadding="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:49 PM"
+                android:layout_marginLeft="50dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/community"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12th Week Industrial Training"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABD CO Industrial Training CodeIsLife 2025"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/unseen"
+                    android:drawablePadding="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/big_b"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bhushan Datar"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thik aahe mg"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/unseen"
+                    android:drawablePadding="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:39 PM"
+                android:layout_marginLeft="140dp"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pk"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prem Kothalkar"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="okk"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/unseen"
+                    android:drawablePadding="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:45 PM"
+                android:layout_marginLeft="135dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/personicon"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Karan Bari"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="😅😅"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/unseen"
+                    android:drawablePadding="4dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:49 PM"
+                android:layout_marginLeft="180dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/person"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suraj Datar"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👍"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/unseen"
+                android:drawablePadding="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:46 PM"
+            android:layout_marginLeft="170dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

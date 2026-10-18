@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:background="?android:attr/colorBackground"
+    android:textColor="?android:attr/textColorPrimary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_person"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhistoryitemsname"
+                android:text="Person Name"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/adamina"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhistoryitemstime"
+                android:text="01 Aug 2025, 11:11AM"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhistoryitemstype"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Received"
+                android:fontFamily="@font/aclonica"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvhistoryitemsamount"
+                android:text="Rs. 1000/-"
+                android:textSize="15sp"
+                android:textColor="#08ED11"
+                android:textStyle="bold"
+                android:fontFamily="@font/adamina"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnhistoryitemsviewdetails"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:text="View Details"
+                android:fontFamily="@font/adlam_display"
+                android:background="@drawable/btn_ripple_background"
+                android:backgroundTint="#4BA5EB"
+                android:layout_marginBottom="8sp"
+                android:layout_marginRight="8sp"
+
+                android:layout_gravity="right|bottom"
+
+
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

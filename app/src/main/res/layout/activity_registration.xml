@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+
+    android:background="@drawable/backgroundforreg"
+    android:textColor="?android:attr/textColorPrimary"
+    >
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mycashierlogo_removebg" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:elevation="0dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="Register Here..!"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/etregistername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10sp"
+                android:hint="Name"
+                android:textColorHint="#232324"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10sp"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="#5E0A2DCC"
+                android:inputType="textPersonName"
+
+                />
+
+            <EditText
+                android:id="@+id/etregistermobileno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10sp"
+                android:layout_marginVertical="8dp"
+                android:hint="Mobile No."
+                android:textColorHint="#232324"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:drawableStart="@drawable/phone"
+
+                android:drawablePadding="10sp"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="#6F4B86A2"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/etregisteremail"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="10sp"
+                android:hint="E-mail"
+                android:textColorHint="#232324"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10sp"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="#9AB1F4"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/etregisterusername"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="10sp"
+                android:hint="Username"
+                android:textColorHint="#232324"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10sp"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="#6F4B86A2"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/etregisterpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_margin="10sp"
+                android:hint="Password"
+                android:textColorHint="#232324"
+                android:textSize="20sp"
+                android:fontFamily="serif"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10sp"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="#5E0B2ECC"
+                android:inputType="textPassword"
+                />
+
+            <CheckBox
+                android:id="@+id/cbshowhidepassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Show Password"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:checked="false"
+                android:layout_marginLeft="180dp"
+
+
+                />
+
+            <Button
+                android:id="@+id/btnregisterregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_ripple_background"
+                android:backgroundTint="#5E2196F3"
+                android:fontFamily="@font/abhaya_libre_extrabold"
+                android:text="Register"
+                android:textSize="23sp"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:id="@+id/btnregistergotologinpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Go to Login Page"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_ripple_background"
+                android:backgroundTint="#5E2196F3"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+  </LinearLayout>

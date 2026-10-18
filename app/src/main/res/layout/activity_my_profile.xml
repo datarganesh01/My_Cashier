@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity"
+    android:background="?android:attr/colorBackground"
+    android:textColor="?android:attr/textColorPrimary"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/ivMyProfileEdit"
+        android:src="@drawable/icon_edit"
+        android:layout_gravity="end"
+        android:layout_margin="16sp"
+        />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/ivMyProfileProfilePhoto"
+                android:src="@drawable/myprofile"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/ivMyProfileSelectProfilePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/black"
+                android:src="@drawable/icon_add"
+                app:tint="@color/white"
+
+
+                />
+        </FrameLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adlam_display"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileName"
+            android:text="Your Name"
+            android:textSize="15sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:layout_marginLeft="10sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No."
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adlam_display"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileMobileNo"
+            android:text="Your Mobile No."
+            android:textSize="15sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adlam_display"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileEmailId"
+            android:text="Your Email ID"
+            android:textSize="15sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adlam_display"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileUsername"
+            android:text="Your Username"
+            android:textSize="15sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Token :-"
+            android:textSize="15sp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/adlam_display"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15sp"
+            android:layout_gravity="start"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyProfileToken"
+            android:text="Token"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:fontFamily="@font/adamina"
+            android:layout_margin="20sp"
+            android:textColor="?android:attr/textColorPrimary"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMyProfileSwitchAccount"
+            android:text="Switch Account"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:fontFamily="@font/adamina"
+
+            android:backgroundTint="#1EAFF0"
+            android:layout_marginTop="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnMyProfileSignOut"
+                android:text="Sign Out"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+                android:backgroundTint="#F40404"
+                android:fontFamily="@font/aclonica"
+
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/btnMyProfileDeleteAccount"
+                android:text="Delete Account"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                android:backgroundTint="#F40404"
+                android:fontFamily="@font/aclonica"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

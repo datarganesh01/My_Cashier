@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Cashier</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="default_web_client_id">235589068065-04pe25usek32rcdkg2cle41dtm53utsr.apps.googleusercontent.com</string>
+
+</resources>

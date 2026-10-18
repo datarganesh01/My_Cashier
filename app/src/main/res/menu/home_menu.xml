@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menuMyProfile"
+        android:title=" 🧑‍🦱 My Profile"
+        app:showAsAction="always"
+        android:icon="@drawable/profile"
+        />
+
+    <item
+        android:id="@+id/menulocation"
+        android:title="Location"
+        app:showAsAction="always"
+        android:icon="@drawable/location"
+        />
+
+    <item
+        android:id="@+id/menuLogout"
+        android:title=" 🔒 Logout"
+        app:showAsAction="always"
+        android:icon="@drawable/logout"
+        />
+
+    <item
+        android:id="@+id/menuTaptoScan"
+        android:title="Tap to Scan"
+        app:showAsAction="always"
+        android:icon="@drawable/qrcodescanner"
+        />
+    <item
+        android:id="@+id/menuNotification"
+        android:title=" 🔔 Notification"
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/menuSettings"
+        android:title=" ⚙️ Settings"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="📷 My QR Code"
+        android:id="@+id/menuQRCode"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menuContactUs"
+        android:title=" 💁 Contact Us"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/menuTextDetection"
+        android:title=" 📝 Text Detection"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menuAboutUs"
+        android:title=" ℹ️  About Us"
+        app:showAsAction="never"
+        />
+
+
+
+
+
+
+
+
+</menu>
